@@ -1,0 +1,13 @@
+.navbar {
+    display: flex;
+    align-items: center;
+    padding: 0 2em;
+    font-family: roboto sans-serif;
+    color: #ff6060;
+    font-weight: 700;
+    gap:2em;
+}
+
+.navbar_logo {
+    margin-right: auto;
+}
