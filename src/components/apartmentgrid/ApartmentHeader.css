@@ -1,0 +1,60 @@
+.apartment_header{
+    display: flex;
+    padding-bottom: 1em;
+    margin-bottom: 2em;
+
+.apartment_title{
+        flex-grow: 1;
+    }
+
+.apartment_owner {
+    }
+
+.apartment_owner_details {
+    display: flex;
+    gap:0.5em
+
+
+}
+
+.apartment_owner_badge{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: grey;
+
+}
+.apartment_owner_stars {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:0.2em;
+    .on {
+        color: #ff6060;
+    }
+    .off{
+        color: lightgrey;
+
+    }
+    
+}
+h3{
+    margin-block: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+font-weight: 400;    }
+.apartment_tags {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px,150px));
+    gap: 1em;
+    span {
+        background-color: #ff6060;
+        color: white;
+        padding: 0.3em 0.5em;
+        border-radius: 0.7em;
+        text-align: center;
+    }
+}
+
+}

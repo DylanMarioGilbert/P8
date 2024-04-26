@@ -1,0 +1,36 @@
+p{
+    margin-block: 0;
+}
+.apartment_description {
+    display: flex;
+    flex-direction: column;
+
+}
+.description_header {
+        background-color:#ff6060;
+        color: white;
+        padding: 0.2em 1em;
+        border-radius: 0.7em;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        cursor: pointer;
+
+        i { 
+        font-size: 2em;
+        color: white;
+    }
+}
+
+    .description_content{
+        
+        background-color: rgb(239 239 239);
+        color: #ff6060;
+        padding: 1em;
+        border-radius: 0.7em;
+        position: relative;
+        top:-0.3em;
+        z-index: -1;
+    
+
+}
