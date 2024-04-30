@@ -2,9 +2,9 @@ import React from "react";
 import "./Accueil.css";
 import Main from "../components/layout/Main";
 import "./ApartmentPage.css";
-import DescriptionCollapse from "../components/apartmentgrid/DescriptionCollapse";
-import ApartmentBanner from "../components/apartmentgrid/ApartmentBanner";
-import ApartmentHeader from "../components/apartmentgrid/ApartmentHeader";
+import DescriptionCollapse from "../components/descriptioncollapse/DescriptionCollapse";
+import ApartmentBanner from "../components/apartmentbanner/ApartmentBanner";
+import ApartmentHeader from "../components/apartmentheader/ApartmentHeader";
 import { useParams } from "react-router-dom";
 
 function ApartmentPage() {
