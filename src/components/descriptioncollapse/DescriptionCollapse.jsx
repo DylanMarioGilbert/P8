@@ -1,14 +1,18 @@
-import React from "react";
+import React, {useState} from "react";
 import "./DescriptionCollapse.css";
 
 export default function DescriptionCollapse({ content, title }) {
+  const [isContentVisible, setIsContentVisible] = useState(false);
+  const showContent = () => {
+    setIsContentVisible(!isContentVisible);
+  }
   return (
     <div className="apartment_description">
       <p className="description_header">
         <span>{title}</span>
-        <i className="fa-solid fa-chevron-down"></i>
+        <i className="fa-solid fa-chevron-down" onClick={showContent}></i>
       </p>
-      <div className="description_content">{content}</div>
+      {isContentVisible && <div className="description_content">{content}</div>}
     </div>
   );
 }

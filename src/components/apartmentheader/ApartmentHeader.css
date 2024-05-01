@@ -50,6 +50,11 @@
         justify-content: center;
         align-items: center;
         gap: 0.2em;
+        @media screen and (width <=768px) {
+            flex-direction: row;
+            justify-content: flex-start;
+
+        }
 
         .on {
             color: #ff6060;
@@ -59,6 +64,7 @@
             color: lightgrey;
 
         }
+       
 
     }
 

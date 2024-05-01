@@ -3,7 +3,10 @@ p{
 }
 
 .apartment_description{
-    min-width: 550px;
+    padding-bottom:1em;
+    min-width: 450px;
+    width: 950px;
+    justify-content: center;
 }
 
 .description_header {

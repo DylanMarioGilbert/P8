@@ -2,11 +2,13 @@ import React from "react";
 import DescriptionCollapse from "../components/descriptioncollapse/DescriptionCollapse";
 import Banner from "../components/banner/Banner";
 import Main from "../components/layout/main/Main";
+import "./About.css"
 
 function About() {
   return (
     <Main>
       <Banner />
+      <div className="container">
       <DescriptionCollapse
         title="Fiabilité"
         content="Les annonces postées sur Kasa garantissent une fiabilité totale. Les photos sont conformes aux logements, et toutes les informations sont régulièrement vérifiées par nos équipes."
@@ -23,6 +25,7 @@ function About() {
         title="Sécurité"
         content="La sécurité est la priorité de Kasa. Aussi bien pour nos hôtes que pour les voyageurs, chaque logement correspond aux critères de sécurité établis par nos services. En laissant une note aussi bien à l'hôte qu'au locataire, cela permet à nos équipes de vérifier que les standards sont bien respectés. Nous organisons également des ateliers sur la sécurité domestique pour nos hôtes."
       />
+      </div>
     </Main>
   );
 }
