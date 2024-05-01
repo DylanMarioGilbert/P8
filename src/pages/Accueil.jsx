@@ -2,7 +2,7 @@ import React from "react";
 import "./Accueil.css";
 import Banner from "../components/banner/Banner";
 import ApartmentGrid from "../components/apartmentgrid/ApartmentGrid";
-import Main from "../components/layout/Main";
+import Main from "../components/layout/main/Main";
 
 
 function App() {

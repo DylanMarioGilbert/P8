@@ -15,12 +15,11 @@
 
     }
     
-    
-  
-.apartment_page_area {
+}
+.apartment_area {
     display: flex;
     gap:1em;
-}
-        
-
+    @media screen and (width <= 768px) {
+        flex-direction: column;
+      }
 }

@@ -1,7 +1,7 @@
 import React from "react";
 import DescriptionCollapse from "../components/descriptioncollapse/DescriptionCollapse";
 import Banner from "../components/banner/Banner";
-import Main from "../components/layout/Main";
+import Main from "../components/layout/main/Main";
 
 function About() {
   return (

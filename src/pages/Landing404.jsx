@@ -1,7 +1,7 @@
 import React from "react";
 import "./Accueil.css";
 import "./Landing404.css";
-import Main from "../components/layout/Main";
+import Main from "../components/layout/main/Main";
 import { NavLink } from "react-router-dom";
 
 function Landing404() {

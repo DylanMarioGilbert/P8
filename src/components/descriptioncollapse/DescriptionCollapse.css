@@ -1,11 +1,11 @@
 p{
     margin-block: 0;
 }
-.apartment_description {
-    display: flex;
-    flex-direction: column;
 
+.apartment_description{
+    min-width: 550px;
 }
+
 .description_header {
         background-color:#ff6060;
         color: white;
