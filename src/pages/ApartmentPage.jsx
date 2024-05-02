@@ -5,10 +5,11 @@ import "./ApartmentPage.css";
 import DescriptionCollapse from "../components/descriptioncollapse/DescriptionCollapse";
 import ApartmentBanner from "../components/apartmentbanner/ApartmentBanner";
 import ApartmentHeader from "../components/apartmentheader/ApartmentHeader";
-import { useParams } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 
 function ApartmentPage() {
-  const { id } = useParams();
+  const location = useLocation();
+  console.log("location", location);
 
   return (
     <Main>
