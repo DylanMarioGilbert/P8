@@ -37,10 +37,10 @@
         }
     }
 
-    .apartment_owner_badge {
-        height: 50px;
-        width: 50px;
-        border-radius: 50%;
+    .apartment_owner_badge img {
+        height: 10px;
+        width: 10px;
+        border-radius: 80%;
         background-color: grey;
 
     }

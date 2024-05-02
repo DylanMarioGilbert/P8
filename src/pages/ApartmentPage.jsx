@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./Accueil.css";
 import Main from "../components/layout/main/Main";
 import "./ApartmentPage.css";
@@ -10,40 +10,36 @@ import { useLocation } from "react-router-dom";
 function ApartmentPage() {
   const location = useLocation();
   console.log("location", location);
+  console.log("our apartment id is:", location.state.apartmentId);
+  const [flat, setFlat] = useState(null);
+  useEffect(fetchApartmentData, [])
+
+  function fetchApartmentData() {
+    fetch("data.json")
+      .then((res) => res.json())
+      .then((flats) => {
+        const flat = flats.find((flat) => flat.id === location.state.apartmentId);
+        setFlat(flat);
+      })
+      .catch(console.error);
+  }
+  if (flat == null) return <div>...Loading</div>
 
   return (
     <Main>
       <div className="apartment-page">
-        <ApartmentBanner />
-        <ApartmentHeader />
+        <ApartmentBanner imageUrl={flat.cover} />
+        <ApartmentHeader flat={flat} />
       </div>
       <div className="apartment_area">
         <DescriptionCollapse
           title="Description"
-          content={
-            <>
-              Vous serez à 50 m du canal Saint-martin où vous pourrez
-              pique-niquer l'été et à côté de nombreux bars et restaurants. Au
-              coeur de Paris avec 5 lignes de métro et de nombreux bus. Logement
-              parfait pour les voyageurs en solo et les voyageurs d'affaires.
-              Vous êtes à 1 station de la gare de l'est (7 minutes à pied).
-            </>
-          }
+          content={flat.description}
         />
 
         <DescriptionCollapse
-          title="Equipement"
-          content={
-            <ul>
-              <li>Climatisation</li>
-              <li>Wi-fi</li>
-              <li>Cuisine</li>
-              <li>Espace de travail</li>
-              <li>Fer à repasser</li>
-              <li>Sèche-cheveux</li>
-              <li>Cintres</li>
-            </ul>
-          }
+          title="Equipements"
+          content={flat.equipments.map(eq => <li>{eq}</li>)}
         />
       </div>
     </Main>
