@@ -12,34 +12,35 @@ function ApartmentPage() {
   console.log("location", location);
   console.log("our apartment id is:", location.state.apartmentId);
   const [flat, setFlat] = useState(null);
-  useEffect(fetchApartmentData, [])
+  useEffect(fetchApartmentData, []);
 
   function fetchApartmentData() {
     fetch("data.json")
       .then((res) => res.json())
       .then((flats) => {
-        const flat = flats.find((flat) => flat.id === location.state.apartmentId);
+        const flat = flats.find(
+          (flat) => flat.id === location.state.apartmentId
+        );
         setFlat(flat);
       })
       .catch(console.error);
   }
-  if (flat == null) return <div>...Loading</div>
+  if (flat == null) return <div>...Loading</div>;
 
   return (
     <Main>
       <div className="apartment-page">
-        <ApartmentBanner imageUrl={flat.cover} />
+        <ApartmentBanner pictures={flat.pictures} />
         <ApartmentHeader flat={flat} />
       </div>
       <div className="apartment_area">
-        <DescriptionCollapse
-          title="Description"
-          content={flat.description}
-        />
+        <DescriptionCollapse title="Description" content={flat.description} />
 
         <DescriptionCollapse
           title="Equipements"
-          content={flat.equipments.map(eq => <li>{eq}</li>)}
+          content={flat.equipments.map((eq, i) => (
+            <li key={i}>{eq}</li>
+          ))}
         />
       </div>
     </Main>
