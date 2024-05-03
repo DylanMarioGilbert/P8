@@ -6,8 +6,7 @@ import "./About.css";
 function About() {
   return (
     <Main>
-      <div className="banner_about" 
-      ></div>
+      <div className="banner_about" />
       <div className="container">
         <DescriptionCollapse
           title="Fiabilité"
