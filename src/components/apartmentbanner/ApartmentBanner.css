@@ -16,10 +16,10 @@
         &:focus {
           outline: none;
         }
-        &.btn-next {
+        &.btn-previous {
           left: 0;
         }
-        &.btn-previous {
+        &.btn-next {
           right: 0;
         }
       }

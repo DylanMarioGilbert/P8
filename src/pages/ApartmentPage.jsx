@@ -5,27 +5,27 @@ import "./ApartmentPage.css";
 import DescriptionCollapse from "../components/descriptioncollapse/DescriptionCollapse";
 import ApartmentBanner from "../components/apartmentbanner/ApartmentBanner";
 import ApartmentHeader from "../components/apartmentheader/ApartmentHeader";
-import { useLocation } from "react-router-dom";
+import { Navigate, useParams } from "react-router-dom";
+
 
 function ApartmentPage() {
-  const location = useLocation();
-  console.log("location", location);
-  console.log("our apartment id is:", location.state.apartmentId);
+  const { id } = useParams();
   const [flat, setFlat] = useState(null);
   useEffect(fetchApartmentData, []);
 
   function fetchApartmentData() {
-    fetch("data.json")
+    fetch("../data.json")
       .then((res) => res.json())
       .then((flats) => {
-        const flat = flats.find(
-          (flat) => flat.id === location.state.apartmentId
-        );
+        const flat = flats.find((flat) => flat.id === id);
+       
         setFlat(flat);
       })
-      .catch(console.error);
+      .catch((err) => console.error);
   }
-  if (flat == null) return <div>...Loading</div>;
+  if (flat === undefined) return <Navigate to="/landing404" />;
+  if (flat === null) return <div>...Loading</div>;
+
 
   return (
     <Main>

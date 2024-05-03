@@ -4,7 +4,7 @@
     background-size: cover;
     max-width:100vw;
     padding-inline:3em;
-    background-image: url(https://unsplash.it/800/200);
+    background-image:url("https://unsplash.it/800/200");
     min-height: 140px;
     max-width: 100%;
     margin: auto;
@@ -13,6 +13,7 @@
     place-items: center;
     color: white;
     margin-bottom: 2em;
+
    
     
 }

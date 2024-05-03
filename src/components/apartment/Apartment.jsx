@@ -2,16 +2,15 @@ import React from "react";
 import "./Apartment.css";
 import { NavLink } from "react-router-dom";
 
-function Apartment(props) {
-
-  
+function Apartment({ id, imageUrl, title }) {
   return (
-    <NavLink to="/flat" state={{
-      apartmentId:props.id
-    }}>
+    <NavLink
+      to={`/flat/${id}`}
+      
+    >
       <div className="apartment">
-        <img src={props.imageUrl} alt="" />
-        <div className="apartment_subtitle">{props.title}</div>
+        <img src={imageUrl} alt="" />
+        <div className="apartment_subtitle">{title}</div>
       </div>
     </NavLink>
   );

@@ -6,9 +6,8 @@
     flex-wrap: wrap;
     gap:1em;
     padding:1em;
-    justify-content: flex-start;
+    justify-content:space-evenly;
 
-}
 
 @media screen and (width<768px){
     .grid {
@@ -16,4 +15,5 @@
         background-color: white;
         padding: 1 0;
     }
+}
 }

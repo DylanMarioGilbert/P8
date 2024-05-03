@@ -4,6 +4,7 @@ import "./ApartmentHeader.css";
 function ApartmentHeader({ flat }) {
 
   const name = flat.host.name;
+  console.log(flat.rating)
   const [firstName, lastName] = name.split("");
 
   return (
@@ -28,7 +29,7 @@ function ApartmentHeader({ flat }) {
         </div>
         <div className="apartment_owner_stars">
           {[1, 2, 3, 4, 5].map((num) => (
-            <span key={num} className={flat.rating >= num ? "on" : ""}>★</span>
+            <span key={num} className={flat.rating >= num ? "on" : "off"}>★</span>
           ))}
         </div>
       </div>
