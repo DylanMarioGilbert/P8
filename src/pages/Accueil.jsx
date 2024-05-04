@@ -4,15 +4,12 @@ import Banner from "../components/banner/Banner";
 import ApartmentGrid from "../components/apartmentgrid/ApartmentGrid";
 import Main from "../components/layout/main/Main";
 
-
 function App() {
   return (
-    
-      <Main>
-      <Banner/>
-      <ApartmentGrid/>
-      </Main>
-    
+    <Main>
+      <Banner />
+      <ApartmentGrid />
+    </Main>
   );
 }
 

@@ -1,50 +1,50 @@
 .banner_about {
-        position: relative;
-        background-position: center;
-        background-size: cover;
-        max-width:100vw;
-        padding-inline:3em;
-        min-height: 140px;
-        background-image: url("https://s3-alpha-sig.figma.com/img/56fa/e17e/b9995860bb6384a77ca7dc9bf52da3be?Expires=1715558400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=n-ESq-LLsPDksorvhcJTtR13fvsFanaba0w44q3fKb~SbpkyM-8SEUIjT68rxq-9Smgp08HXYUVIzl4sA1AAdJIiixSNVn2mVNpX4b~aQ5QBt3iyGL1DTJu1i~-LDSOz8wnsb57UZMpPJjtLoO8w6uZQx1dy63sP3wlUMxVzk-FWW1l6RoytGqFH0R2kmE9L9z2KynMZBG3hzGVcdZ~9YdJubPYu0rYkda0hsZj7AbD-CTHaKfs32NRvuleRcIWZNGzbM1NQoXPZbTYNjl5TUCUhFZhpt7LYzNTfRC7aaSOiyGhi06XQAb1THxnwbp3hTrOQ1gHdeQ8a8R4jqsfHMA__");
-        max-width: 100%;
-        margin: auto;
-        border-radius: 2em;
-        display: grid;
-        place-items: center;
-        color: white;
-        margin-bottom: 2em;
-    
-    }
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    max-width: 100vw;
+    padding-inline: 3em;
+    min-height: 140px;
+    background-image: url("https://s3-alpha-sig.figma.com/img/56fa/e17e/b9995860bb6384a77ca7dc9bf52da3be?Expires=1715558400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=n-ESq-LLsPDksorvhcJTtR13fvsFanaba0w44q3fKb~SbpkyM-8SEUIjT68rxq-9Smgp08HXYUVIzl4sA1AAdJIiixSNVn2mVNpX4b~aQ5QBt3iyGL1DTJu1i~-LDSOz8wnsb57UZMpPJjtLoO8w6uZQx1dy63sP3wlUMxVzk-FWW1l6RoytGqFH0R2kmE9L9z2KynMZBG3hzGVcdZ~9YdJubPYu0rYkda0hsZj7AbD-CTHaKfs32NRvuleRcIWZNGzbM1NQoXPZbTYNjl5TUCUhFZhpt7LYzNTfRC7aaSOiyGhi06XQAb1THxnwbp3hTrOQ1gHdeQ8a8R4jqsfHMA__");
+    max-width: 100%;
+    margin: auto;
+    border-radius: 2em;
+    display: grid;
+    place-items: center;
+    color: white;
+    margin-bottom: 2em;
+}
 
-    .banner_about::before {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        border-radius: 2em;
-        background-color: rgba(0, 0, 0, 0.3); 
-      }
+.banner_about::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 2em;
+    background-color: rgba(0, 0, 0, 0.3);
+}
 
 .container {
     padding-inline: 5.5em;
-    border-radius:0%;
+    border-radius: 0%;
     display: flex;
     flex-direction: column;
     align-items: center;
 
-    
 
-    .description_content{
-        
+
+    .description_content {
+
         border-radius: 0em;
-    
-}
-.description_header {
-    border-radius: 0em;
 
-    
-}
-    
+    }
+
+    .description_header {
+        border-radius: 0em;
+
+
+    }
+
 }

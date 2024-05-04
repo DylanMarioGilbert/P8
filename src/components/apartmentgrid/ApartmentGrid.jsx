@@ -11,13 +11,18 @@ function ApartmentGrid() {
     fetch("data.json")
       .then((res) => res.json())
       .then((res) => setApartments(res))
-      .catch(console.error);
+      .catch((err) => console.error(err));
   }
 
   return (
     <div className="grid">
       {apartments.map((apartment) => (
-      <Apartment title={apartment.title} imageUrl={apartment.cover} key={apartment.id} id={apartment.id} />
+        <Apartment
+          title={apartment.title}
+          imageUrl={apartment.cover}
+          key={apartment.id}
+          id={apartment.id}
+        />
       ))}
     </div>
   );
