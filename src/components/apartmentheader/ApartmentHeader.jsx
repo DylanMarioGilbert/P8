@@ -23,7 +23,7 @@ function ApartmentHeader({ flat }) {
             <h3>{lastName}</h3>
           </div>
           <div className="apartment_owner_badge">
-            <img src={flat.host.picture} />
+            <img src={flat.host.picture} alt="" />
           </div>
         </div>
         <div className="apartment_owner_stars">

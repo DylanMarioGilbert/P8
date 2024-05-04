@@ -7,25 +7,23 @@ import ApartmentBanner from "../components/apartmentbanner/ApartmentBanner";
 import ApartmentHeader from "../components/apartmentheader/ApartmentHeader";
 import { Navigate, useParams } from "react-router-dom";
 
-
 function ApartmentPage() {
   const { id } = useParams();
   const [flat, setFlat] = useState(null);
-  useEffect(fetchApartmentData, []);
+  useEffect(fetchApartmentData, [id]);
 
   function fetchApartmentData() {
     fetch("../data.json")
       .then((res) => res.json())
       .then((flats) => {
         const flat = flats.find((flat) => flat.id === id);
-       
+
         setFlat(flat);
       })
       .catch((err) => console.error);
   }
   if (flat === undefined) return <Navigate to="/landing404" />;
   if (flat === null) return <div>...Loading</div>;
-
 
   return (
     <Main>
