@@ -16,7 +16,7 @@ function ApartmentHeader({ flat }) {
           ))}
         </div>
       </div>
-      <div className="appartment_owner">
+      <div className="apartment_owner">
         <div className="apartment_owner_details">
           <div>
             <h3>{firstName}</h3>

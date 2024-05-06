@@ -32,6 +32,7 @@ p {
     position: relative;
     top: -0.3em;
     z-index: -1;
-    height:150px;
-    font-size: large;
+    height:170px;
+    font-size:medium;
+    border-radius: 1em 1em 0em 0em;
 }

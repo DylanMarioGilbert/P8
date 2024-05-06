@@ -1,21 +1,24 @@
 .error-page {
     color: #ff6060;
     text-align: center;
-    h1{
+
+    h1 {
         font-size: 10em;
         margin-bottom: 0.5em;
-
     }
-    h2{
+
+    h2 {
         font-size: 28px;
         font-weight: 400;
-
     }
-    a{
+
+    a {
         color: #ff6060;
     }
-    h3{
+
+    h3 {
         color: black;
-        text-decoration: black;
+        text-decoration:underline;
+        text-decoration-color: black;
     }
 }

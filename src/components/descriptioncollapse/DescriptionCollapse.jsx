@@ -17,9 +17,7 @@ export default function DescriptionCollapse({ content, title }) {
           onClick={showContent}
         ></i>
       </p>
-      {isContentVisible && (
-        <div className="description_content">{content}</div>
-      )}
+      {isContentVisible && <div className="description_content">{content}</div>}
     </div>
   );
 }
