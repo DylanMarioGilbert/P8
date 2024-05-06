@@ -2,13 +2,13 @@ import React, { useState } from "react";
 import "./ApartmentBanner.css";
 
 function ApartmentBanner({ pictures }) {
-  
   const [currentPicture, setCurrentPicture] = useState(0);
 
   const getClassName = (i) => {
     if (i === currentPicture) return "show";
     return "";
   };
+
   const moveToNext = () => {
     setCurrentPicture((currentPicture + 1) % pictures.length);
   };

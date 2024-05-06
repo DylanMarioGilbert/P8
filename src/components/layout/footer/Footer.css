@@ -1,4 +1,4 @@
-.footer {
+/* .footer {
     bottom: 0;
     left: 0;
     width: 100%;
@@ -10,7 +10,31 @@
     display: grid;
     place-items: center;
     height: 10em;
+} */
 
-}
+ html {
+    position: relative;
+    min-height: 100%;
+  } 
+  
+  body {
+    margin: 0;
+    padding-bottom: 100px;
+  }  
+  
+  .footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color:black;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    min-height: 150px; 
+    height:150px;
+    display: grid;
+    place-items: center;
+  }
   
   

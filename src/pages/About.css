@@ -33,18 +33,12 @@
     flex-direction: column;
     align-items: center;
 
-
-
     .description_content {
-
         border-radius: 0em;
-
+        height: max-content;
     }
 
     .description_header {
         border-radius: 0em;
-
-
     }
-
 }
