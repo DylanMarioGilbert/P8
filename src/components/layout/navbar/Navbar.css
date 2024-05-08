@@ -1,16 +1,18 @@
 .navbar {
     display: flex;
     align-items: center;
-    padding: 0 2em;
     font-family: roboto sans-serif;
     font-weight: 700;
     gap: 2em;
     min-height: 75px;
+    max-width: 1240px;
+    margin: 0 auto;
 
     @media screen and (width <=768px) {
         text-transform: uppercase;
         font-weight: 500;
         font-size:x-small;
+        margin: 0 1em;
     }
 
     a {
@@ -28,7 +30,6 @@
 
 .navbar_logo {
     margin-right: auto;
-    width: 220px;
     height: 95px;
 
     img {

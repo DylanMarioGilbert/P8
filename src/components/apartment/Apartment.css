@@ -5,8 +5,8 @@
     align-items: end;
     background-size: cover;
     position: relative;
-    width: 300px;
-    height: 300px;
+    width: 350px;
+    height: 350px;
 
     img {
         width: 100%;
@@ -17,16 +17,15 @@
         border-radius: 1rem;
     }
 
-        @media screen and (width <=768px) {
-            flex-basis: 100%;
-            width: 350px;
-        }
+    @media screen and (width <=768px) {
+        width: 350px;
     }
+}
 
-    .apartment_subtitle {
-        width: 50%;
-        margin-inline-start: 0.5em;
-        margin-block-end: 0.5em;
-        color: white;
-        position: absolute;
-    }
+.apartment_subtitle {
+    width: 50%;
+    margin-inline-start: 0.5em;
+    margin-block-end: 0.5em;
+    color: white;
+    position: absolute;
+}

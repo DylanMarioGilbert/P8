@@ -6,6 +6,9 @@
 
     @media screen and (width <=768px) {
         flex-direction: column;
+        padding-bottom: 0em;
+        margin-bottom: 0em;
+        gap: 0em;
     }
 
     .apartment_title {

@@ -1,27 +1,24 @@
 .apartment-page {
     color: #ff6060;
-    
-    h1{
-        font-weight: 400;
-        margin-block:0;
 
+    h1 {
+        font-weight: 400;
+        margin-block: 0;
     }
 
-    h2{
+    h2 {
         font-weight: 400;
         margin-top: 0.5em;
         margin-bottom: 0.2em;
         font-size: 20px;
-
     }
-    
 }
+
 .apartment_area {
-    flex-basis: 50%;
     display: flex;
-    gap:1em;
-    @media screen and (width <= 768px) {
+    gap: 1em;
+
+    @media screen and (width <=768px) {
         flex-direction: column;
-        width: 50%;
-      }
+    align-items: center;    }
 }

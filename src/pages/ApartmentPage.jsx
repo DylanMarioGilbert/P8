@@ -20,7 +20,7 @@ function ApartmentPage() {
 
         setFlat(flat);
       })
-      .catch((err) => console.error);
+      .catch((err) => console.error(err));
   }
   if (flat === undefined) return <Navigate to="/landing404" />;
   if (flat === null) return <div>...Loading</div>;
