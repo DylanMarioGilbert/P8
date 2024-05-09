@@ -3,8 +3,11 @@ p {
 }
 
 .apartment_description {
-    width: 100%;
+    width: 80%;
     justify-content: center;
+    @media screen and (width <=768px) {
+        width: 100%;        
+    }
 }
 
 .description_header {
