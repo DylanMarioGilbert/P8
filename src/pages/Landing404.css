@@ -1,14 +1,19 @@
 .error-page {
     color: #ff6060;
     text-align: center;
+    @media screen and (width <=768px) {
+        h3{
+            margin-top: 2em;
+        }
+    }
 
     h1 {
-        font-size: 8em;
+        font-size: 7em;
         margin-bottom: 0.5em;
     }
 
     h2 {
-        font-size: 28px;
+        font-size: 20px;
         font-weight: 400;
     }
 
