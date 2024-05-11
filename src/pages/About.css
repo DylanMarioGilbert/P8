@@ -35,9 +35,9 @@
     align-items: center;
     gap: 1em;
 
+
     .description_content {
         border-radius: 0.7em;
-        height: max-content;
     }
 
     .description_header {

@@ -1,15 +1,10 @@
 .main {
     margin-bottom: 100px;
-    @media screen and (width <=768px) {
-        margin-bottom: 35px;
-        }
-    
 }
 .children_container {
     max-width: 1240px;
     margin: 0 auto;
     @media screen and (width <=768px) {
-        margin: 0 1em;
-        
+        margin: 0 1em; 
     }
 }

@@ -27,5 +27,4 @@ function ApartmentGrid() {
     </div>
   );
 }
-
 export default ApartmentGrid;

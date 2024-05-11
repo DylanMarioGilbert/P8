@@ -28,5 +28,4 @@ function About() {
     </Main>
   );
 }
-
 export default About;

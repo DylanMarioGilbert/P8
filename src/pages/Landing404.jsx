@@ -17,5 +17,4 @@ function Landing404() {
     </Main>
   );
 }
-
 export default Landing404;

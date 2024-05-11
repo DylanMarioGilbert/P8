@@ -17,7 +17,6 @@ function ApartmentPage() {
       .then((res) => res.json())
       .then((flats) => {
         const flat = flats.find((flat) => flat.id === id);
-
         setFlat(flat);
       })
       .catch((err) => console.error(err));
@@ -44,5 +43,4 @@ function ApartmentPage() {
     </Main>
   );
 }
-
 export default ApartmentPage;

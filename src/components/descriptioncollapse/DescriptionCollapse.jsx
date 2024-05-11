@@ -3,11 +3,9 @@ import "./DescriptionCollapse.css";
 
 export default function DescriptionCollapse({ content, title }) {
   const [isContentVisible, setIsContentVisible] = useState(false);
-
   const showContent = () => {
     setIsContentVisible(!isContentVisible);
   };
-
   return (
     <div className="apartment_description">
       <p className="description_header">

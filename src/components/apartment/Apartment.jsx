@@ -12,5 +12,4 @@ function Apartment({ id, imageUrl, title }) {
     </NavLink>
   );
 }
-
 export default Apartment;

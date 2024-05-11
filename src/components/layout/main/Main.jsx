@@ -12,5 +12,4 @@ function Main({ children }) {
     </div>
   );
 }
-
 export default Main;

@@ -11,9 +11,10 @@ function Footer() {
           width="100"
         />
       </div>
-      <div className="footer_text">© 2020 Kasa. All rights reserved</div>
+      <div className="footer_text">
+        © 2020 Kasa. All <br /> rights reserved
+      </div>
     </div>
   );
 }
-
 export default Footer;
