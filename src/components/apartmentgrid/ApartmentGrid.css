@@ -5,13 +5,13 @@
     display: flex;
     flex-wrap: wrap;
     gap: 2em;
-    padding: 1em;
+    padding: 2em 0;
     justify-content: space-around;
 
     @media screen and (width<768px) {
         justify-content: center;
         background-color: white;
-        padding: 1 0;
+        padding: 0.5em 0;
         gap:1em;
     }
 }
