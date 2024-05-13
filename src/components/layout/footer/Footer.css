@@ -10,7 +10,7 @@
       width: 100%;
       background-color: black;
       color: white;
-      padding: 22px;
+      padding: 22px 0;
       text-align: center;
       height: 130px;
       display: grid;
@@ -21,4 +21,7 @@
   }
   .footer_text br {
     display: none;
+    @media screen and (width <=768px) {
+      display: block;
+      }
   }
