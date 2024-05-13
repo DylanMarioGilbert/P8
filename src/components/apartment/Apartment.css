@@ -19,6 +19,7 @@
 
     @media screen and (width <=768px) {
         width: 350px;
+        height: 300px;
     }
 }
 

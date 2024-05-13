@@ -8,15 +8,11 @@
     background-image: url("https://s3-alpha-sig.figma.com/img/56fa/e17e/b9995860bb6384a77ca7dc9bf52da3be?Expires=1716768000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=XlAIE~APgS35VHQCgQgGhopy3AkJoNXB3MNfQ6b-OT9qNcJYyTNDIcmS24s6JtcPHJPX~9sXD2JQXuT4BwheLvROtra3slMUMJ22lWi4OTs1nfds6Ba4mCVouc2tqLzpmm4~6nnHqXu7SfD6CnKNQ65lnDVmNLUValgKNIcasdiySSBshzXuxOEjyWmr5IDbMRCQkhDktUqs9UKIdf4Asy6p9tg8nwtM-Eb6Uy~8YLkpEdQQ2iUjlK~-ByHfxQ3A8-~9RBRoPUPtLzU3KyhVzElh~AAK9aljQPLXbsyEAKEJ3xTOa1GeuTgLR0gUBTr7X6JW7LD3Tmd1pSc~xEI4iw__");
     max-width: 100%;
     margin: auto;
-    border-radius: 2em;
+    border-radius: 1em;
     display: grid;
     place-items: center;
     color: white;
     margin-bottom: 2em;
-
-    @media screen and (width <=768px) {
-        margin: 1em;
-    }
 }
 
 .banner_about::before {
@@ -26,7 +22,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    border-radius: 2em;
+    border-radius: 1em;
     background-color: rgba(0, 0, 0, 0.3);
 }
 

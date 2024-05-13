@@ -6,7 +6,7 @@
     min-height: 140px;
     background-image: url("https://s3-alpha-sig.figma.com/img/4706/e7dd/e270fc8fc902a1eb738458e7b29c1899?Expires=1716768000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=XHVfY9VgyBowNy52kADFEDHbH9E50AZyCbnWhdPde-wptD8FeyvTIdwXBgt2UobToAPGEo-yk5Co~-kuE256Rqc1lA5wMt6gWGkBsAfagCm~wBZqcdeIE56getFdcq2bJZiGoF-kGJKZpn8gW0FJMgjsJ2YJDbvIqKnArZf6EPMdWiUPqBC1K7zPkJs5loJf2QavMxVZqYiurHWyHj1Vu3Z0dYpoBPWNuSH5nnPupSDNRXieewUHaz83Ny10V7G2og5DtwUH0QtQzVn-czn6ifk9N8vJbxkw2fQmaQ1j5KcQwRf-P33t4UcD10qZT9mQWZR-0E5AGb27oYnEczF6vQ__");
     max-width: 1240px;
-    border-radius: 2em;
+    border-radius: 1em;
     display: grid;
     place-items: center;
     margin-bottom: 1em;
@@ -20,7 +20,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    border-radius: 2em;
+    border-radius: 1em;
     background-color: rgba(0, 0, 0, 0.6);
 }
 

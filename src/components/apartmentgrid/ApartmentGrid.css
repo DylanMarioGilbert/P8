@@ -12,5 +12,6 @@
         justify-content: center;
         background-color: white;
         padding: 1 0;
+        gap:1em;
     }
 }
