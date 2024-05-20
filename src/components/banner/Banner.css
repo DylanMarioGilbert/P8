@@ -25,6 +25,20 @@
 }
 
 .banner h2 {
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
     position: relative;
     z-index: 1;
+
+    @media screen and (width <=768px) {
+        font-size: 19px;
+    }
+
 }
+.banner br {
+    display: none;
+    @media screen and (width <=768px) {
+      display: block;
+      }
+  }
