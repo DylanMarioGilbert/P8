@@ -34,6 +34,9 @@
         width: 100%;
         bottom: 1em;
         text-align: center;
+        @media screen and (width <=768px) {
+            display:none;
+        }
     }
 
     .image_container {
